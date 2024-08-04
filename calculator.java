@@ -52,6 +52,9 @@ public class calculator {
         return a % b;
     }
 
+    public double power(int a, int b) {
+        return Math.pow(a, b);
+    }
     public static void main(String[] args) {
         calculator calculator = new calculator();
 
@@ -61,5 +64,7 @@ public class calculator {
         System.out.println("Multiplication: " + calculator.multiply(5, 3));
         System.out.println("Division: " + calculator.divide(5, 3));
         System.out.println("Modulus: " + calculator.modulus(5, 3));
+        System.out.println("Power: " + calculator.power(5, 3));
+
     }
 }
